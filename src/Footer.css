@@ -1,0 +1,9 @@
+.bg-primary-3{
+    background-color: #1B1F3B;
+}
+
+.container p{
+    margin-top: 10px;
+    margin-bottom:10px;
+    padding-bottom:0;
+}

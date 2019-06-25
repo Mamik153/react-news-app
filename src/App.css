@@ -1,3 +1,16 @@
+:root {
+  --primaryColor: #af9a7d;
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --darkGrey: #cfcfcf;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 3px;
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
 .App {
   text-align: center;
 }
@@ -21,6 +34,12 @@
 
 .App-link {
   color: #61dafb;
+}
+
+h1{
+  text-align: center;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
 @keyframes App-logo-spin {

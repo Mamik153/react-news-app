@@ -1,11 +1,12 @@
 import React from 'react';
-//import logo from './logo.svg';
 import './App.css';
 import Nav from "./Nav";
-import News from "./News"
-import Headlines from "./Headlines"
-import Error from "./Error"
-import Footer from "./Footer";
+import News from "./components/News"
+import Headlines from "./components/Headlines"
+import Error from "./components/Error"
+import Footer from "./components/Footer";
+import Business from './components/Business';
+import WallStreet from './components/WallStreet'
 import {Route, Switch} from 'react-router-dom'
 
 function App(){
@@ -16,7 +17,9 @@ function App(){
         <Nav />
         <Switch>
           <Route path="/" exact component={Headlines} />
-          <Route path="/tech/" exact component={News} />
+          <Route path="/tech" component={News} />
+          <Route path="/business" component={Business} />
+          <Route path="/wsj" component={WallStreet} />
           <Route component={Error} />
         </Switch>
           

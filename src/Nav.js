@@ -12,9 +12,9 @@ class Nav extends React.Component{
 
     render(){
         return(
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top" style={{ display:'flex', justifyContent: 'flex-between' }}>
                 <Link className="navbar-brand" to="/">
-                    <a className="navbar-brand" href>News App</a>
+                    News App
                 </Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -28,26 +28,14 @@ class Nav extends React.Component{
                         <li className="nav-item">
                             <Link className="nav-link" to="/tech">Technology</Link>
                         </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/business">Business</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/wsj">Wall Street Journal</Link>
+                        </li>
                     </ul>
                 </div>
-                {/*<div className="nav-center">
-                     <div className="nav-header">
-                        <Link to="/">
-                            <img alt="logo"/>
-                        </Link>
-                        <button type="button" className="nav-btn" onClick={this.handleToggle}>
-                            {this.state.isOpen ? <FaTimes className="nav-icon" /> : <FaBars className="nav-icon"/>}
-                        </button>
-                    </div>
-                    <ul className={this.state.isOpen ? "nav-link show-nav" : "nav-link"}>
-                        <li>
-                            <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/tech">Technology</Link>
-                        </li>
-                    </ul>
-                </div>*/}
             </nav>
         )
     }

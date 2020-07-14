@@ -12,7 +12,7 @@ class Nav extends React.Component{
 
     render(){
         return(
-            <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top" style={{ display:'flex', justifyContent: 'flex-between' }}>
+            <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
                 <Link className="navbar-brand" to="/">
                     News App
                 </Link>
@@ -20,8 +20,8 @@ class Nav extends React.Component{
                     <span className="navbar-toggler-icon"></span>
                 </button>
 
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav mr-auto">
+                <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul className="navbar-nav">
                         <li className="nav-item">
                             <Link className="nav-link" to="/">Home</Link>
                         </li>
